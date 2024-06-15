@@ -151,7 +151,7 @@ def get_label(filedir):
     labels=list(dataset['label'])
     return labels
 
-HLA_all=pd.read_csv('data/Table4.csv')
+HLA_all=pd.read_csv('data/TCR-HLA-epotite4.csv')
 
 MHCRestriction=pd.Series(list(HLA_all['MHCRestriction']))
 Epitope=pd.Series(list(HLA_all['Epitope']))
