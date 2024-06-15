@@ -31,7 +31,8 @@ $ cd MHLAPre
 ```
 
 # Dataset description
-In this paper, epitope presentation and immunogenicity data sources are used, which are freely downloaded from IEDB (https://www.iedb.org)
+In this paper, epitope presentation and immunogenicity data sources are used, which are freely downloaded from IEDB (https://www.iedb.org) , 10X Genomics Datasets (https://www.10xgenomics.com/datasets) , VDJdb (https://vdjdb.cdr3.net/search) and McPAS-TCR(http://friedmanlab.weizmann.ac.il/McPAS-TCR/).
+
 By default, you can run our model using the immunogenicity dataset with:
 ```
 python Pretreatment.py
