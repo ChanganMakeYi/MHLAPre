@@ -8,6 +8,7 @@ python==3.9.13
 numpy==1.21.2
 pandas==1.4.4
 torch==1.12.1
+learn2learn==0.2.0
 scikit-learn>=1.0.2
 pandas>=1.2.4
 rdkit~=2021.03.2
@@ -35,12 +36,23 @@ In this paper, epitope presentation and immunogenicity data sources are used, wh
 
 By default, you can run our model using the immunogenicity dataset with:
 ```
+python HLA_encode.py
+
 python Pretreatment.py
 
 python TransfomerEncoder.py
 
-python TextCNN.py
+python TextCNNTrain.py
 ```
+
+For the pHLA-TCR transfer learning stage (MHLAPre-TT), run:
+```
+python Transfer_TCR.py
+```
+
+See `RESTORATION_NOTES.md` and `ARCHITECTURE.md` for a file-by-file map of
+this pipeline, including two files (`DataPre.py`, `main.py`) that are kept
+for history/reference but are superseded by `Transfer_TCR.py`.
 
 
 # Acknowledgments
